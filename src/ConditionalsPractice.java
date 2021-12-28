@@ -79,23 +79,5 @@ public class ConditionalsPractice {
             return message;
         }
 
-        //Step 4
-        public static void main(String[] args) {
-            /*Test 1 for nameIntroductions(), testing:
-                -1st half of alphabet first name
-                -5 character last name
-            */
-            System.out.println("EXPECTED: What is up Jess Bahny, I am sure glad to meet you!");
-            System.out.println("ACTUAL: " + nameIntroductions("Jess", "Bahny"));
-
-            /*Write tests for at least:
-                -1st half of alphabet first name/<5 character last name
-                -1st half of alphabet first name/6 character last name
-                -2nd half of alphabet first name/<5 character last name
-                -2nd half of alphabet first name/5 character last name
-                -2nd half of alphabet first name/6 character last name
-            */
-
-        }
 
 }

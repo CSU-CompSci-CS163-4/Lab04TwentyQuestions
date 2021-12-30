@@ -18,7 +18,7 @@ This is the heart of your program logic. You will code all of the methods in thi
 
 compareTwo(int, int) compares two numbers together and will return a String. At its heart, it is three if/else statements. The first if/else condition is done for you as an example:
 
-```
+```java
 if(first < second) { 
   output = output + first + " is less than " + second + "\n";
 } 
@@ -28,7 +28,8 @@ else {
 ```
 A couple things to notice about the code - the return value of the method is output, and you are concatenating/adding to it with every value. Given the newline character `\n` is added that means your String will contain multiple lines if it is printed (which it is in the test method).
 
-Now it is your turn to write two additional statements.
+Now it is your turn to write two additional statements. Below is some psuedo code to help you figure out the logic. We suggest drawing out the tree!
+
 ```
 If the first integer is greater than or equal to second integer:
 
@@ -50,7 +51,9 @@ else:
 
 For example:
 
+```java
 System.out.println(compareTwo(0, 1));
+```
 
 Would output:
 ```
@@ -67,20 +70,20 @@ When you run the program, it will automatically test the method by calling compa
 ## Step 2: numberGame(int number)
 
 The numberGame() uses `if` statements, but instead of setting a variable, you will notice the example uses returns.
-```
+```java
 if(number == 7) return "Lucky Sevens";
   //TODO Student    
 return "Positive number";  
 ```
 Once you return out of the method, the rest of the code isn’t processed. The following numbers to look for are listed below:
-```
-If the number is less than 10 but greater than 0, return “Single digit”.
-If the number is 7 return “Lucky Sevens”.
-If the number is 42, return “The answer to life the universe and everything”.
-If the number is below 0, return “negative number”.
-If the number is 0, return “ZERO”.
-Otherwise, return “Positive number”.
-```
+
+* If the number is less than 10 but greater than 0, return “Single digit”.
+* If the number is 7 return “Lucky Sevens”.
+* If the number is 42, return “The answer to life the universe and everything”.
+* If the number is below 0, return “negative number”.
+* If the number is 0, return “ZERO”.
+* Otherwise, return “Positive number”.
+
 Hint: Your `if` statements should go from most specific to least specific. If one answer falls under multiple categories, return the most specific one. For example if the number is 7, the method should return “Lucky Sevens” not “Single Digit”.
 
 **Testing numberGame(int number)**
@@ -92,20 +95,24 @@ You should be testing as you write each line (really, typos are easy to make but
 For this next method you are going to practice `if` statements with Strings. You will write a method called `nameIntroductions` that takes two Strings, a `first name` and `last name`, and returns a `String` containing a short message to the user.
 
 We have completed the first half of the statements for you. However, the second half of the greeting needs to be added to the message String.
-```
-If their last name is between 0 and 5 letters long the message ends “, I am sure glad to meet you!”.
-If the last name is between 6 to 13 letters long the message ends “, I hope you are having a good day so far!”.
-Otherwise, the message ends “ how are you doing this fine day!”.
-```
-Be careful about commas and spacing!
 
-One last reminder, to get the length of the String, call `.length()`
 
+* If their last name is between 0 and 5 letters long the message ends “, I am sure glad to meet you!”.
+* If the last name is between 6 to 13 letters long the message ends “, I hope you are having a good day so far!”.
+* Otherwise, the message ends “ how are you doing this fine day!”.
+
+
+> **Reminder**  
+> Be careful about commas and spacing!
+>
+Note: to get the length of the String, call `.length()`
 For example:
-```
-int len = last_name.length();
-```
+```java
+ int len = last_name.length();
+ ```
+
 Here are a couple examples of output from a successfully working method.
+
 ```
 What is up Audrey Dorin, I am sure glad to meet you!
 
@@ -122,9 +129,7 @@ Go ahead and run the game a few times. Once you have completed this step, you sh
 
 ## Step 4: Turning In/Receiving Credit
 
-1. Submit the lab in Zybooks
-2. In-person students, please show your tests to the TA. 
-3. Online students, there will be a discussion post for you to include your tests.
+Submit the lab in Zybooks by clicking through the canvas link, as this is a Thursday practice lab, the grade is only based on getting it done. However, you should still be writing tests and using the techniques demonstrated.  Make sure canvas updated (you may need to click the link again, and then click submit for grading again)!
 
 ## Review of Branching
 

@@ -1,8 +1,3 @@
----
-Summary: Practice lab focusing on Conditional Branching Statements
-TimeExpected: TBD
----
-
 # Lab 04 - Conditionals Practice
 
 In this lab, you will work on a simple program that helps you learn about conditional statements, both for primitives and for Strings. By the end you will have a very simple program that outputs a greeting and some information about a number. This is also the first lab that has multiple files, and we will talk you through those files.

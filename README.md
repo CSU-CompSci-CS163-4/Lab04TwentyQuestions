@@ -1,138 +1,22 @@
-# Lab 04 - Conditionals Practice
+# Lab 04 - Twenty Questions
 
-In this lab, you will work on a simple program that helps you learn about conditional statements, both for primitives and for Strings. By the end you will have a very simple program that outputs a greeting and some information about a number. This is also the first lab that has multiple files, and we will talk you through those files.
+In this lab, you will create a simple program that is a 20 questions game.
 
-This is the first time you have dealt with multiple files in a lab. Java is made up of many files and classes all interacting together. If you click the arrow by the file name, you will be able to see both files.
+## Step 1: Self-Explanation
+Using the flow diagram below, explain *in your own words* what is happening in `main()`. Put some comments above the different methods being called so that before you start coding, you know the big picture of how the game is going to work.
 
-The details of the files are as follows:
+![TwentyQuestionsFlow](https://user-images.githubusercontent.com/77072076/147839671-0071ef70-95f7-4b10-b225-2ae2a18d86aa.png)
 
-**ConditionalsPracticeMain.java**
+## Step 2: Coding
+Take a look at the [javadoc](http://www.cs.colostate.edu/~cs163/javadoc/lab04/package-list.html). Edit the methods marked with `TODO student`. Make sure to test your methods as you complete each one. If you wait until the end to test your code, it makes everything so much harder to debug. 
 
-This file contains your main method `public static void main(String[] args)`, which also means it is the entry point into your program. Looking through this file, you will see a number of methods designed to help you test your code. It is very common practice that for every method you write, you write a secondary method to test it.
-
-**ConditionalsPractice.java**
-
-This is the heart of your program logic. You will code all of the methods in this class, so let’s start here! Select the file `ConditionalsPractice.java` in the drop down.
-
-## Step 1: compareTwo(int first, int second)
-
-compareTwo(int, int) compares two numbers together and will return a String. At its heart, it is three if/else statements. The first if/else condition is done for you as an example:
-
-```java
-if(first < second) { 
-  output = output + first + " is less than " + second + "\n";
-} 
-else {
-  output = output + first + " is not less than " + second + "\n";  
-}
-```
-A couple things to notice about the code - the return value of the method is output, and you are concatenating/adding to it with every value. Given the newline character `\n` is added that means your String will contain multiple lines if it is printed (which it is in the test method).
-
-Now it is your turn to write two additional statements. Below is some psuedo code to help you figure out the logic. We suggest drawing out the tree!
-
-```
-If the first integer is greater than or equal to second integer:
-
-    [first] is greater than or equal to [second]
-
-else:
-
-    [first] is not greater than or equal to [second]
-
-
-If the first integer is equal to the second integer:
-
-    [first] is equal to [second]
-
-else:
-
-    [first] is not equal to [second]
-```
-
-For example:
-
-```java
-System.out.println(compareTwo(0, 1));
-```
-
-Would output:
-```
-0 is less than 1
-0 is not greater than or equal to 1
-0 is not equal to 1
-```
-Work through the method, writing only a couple of lines at a time, run the program, then add more lines.
-
-**Testing compareTwo(int first, int second)**
-
-When you run the program, it will automatically test the method by calling compareTwoTests(). You should find that method in BranchingMain.java. You should add your own tests, as we only tested a limited set of numbers.
-
-## Step 2: numberGame(int number)
-
-The numberGame() uses `if` statements, but instead of setting a variable, you will notice the example uses returns.
-```java
-if(number == 7) return "Lucky Sevens";
-  //TODO Student    
-return "Positive number";  
-```
-Once you return out of the method, the rest of the code isn’t processed. The following numbers to look for are listed below:
-
-* If the number is less than 10 but greater than 0, return “Single digit”.
-* If the number is 7 return “Lucky Sevens”.
-* If the number is 42, return “The answer to life the universe and everything”.
-* If the number is below 0, return “negative number”.
-* If the number is 0, return “ZERO”.
-* Otherwise, return “Positive number”.
-
-Hint: Your `if` statements should go from most specific to least specific. If one answer falls under multiple categories, return the most specific one. For example if the number is 7, the method should return “Lucky Sevens” not “Single Digit”.
-
-**Testing numberGame(int number)**
-
-You should be testing as you write each line (really, typos are easy to make but hard to find). Go to the numberGameTest() and add tests. You will notice we did not test all the conditions, and you should.
-
-## Step 3: nameIntroductions(String first_name, String last_name)
-
-For this next method you are going to practice `if` statements with Strings. You will write a method called `nameIntroductions` that takes two Strings, a `first name` and `last name`, and returns a `String` containing a short message to the user.
-
-We have completed the first half of the statements for you. However, the second half of the greeting needs to be added to the message String.
-
-
-* If their last name is between 0 and 5 letters long the message ends “, I am sure glad to meet you!”.
-* If the last name is between 6 to 13 letters long the message ends “, I hope you are having a good day so far!”.
-* Otherwise, the message ends “ how are you doing this fine day!”.
-
-
-> **Reminder**  
-> Be careful about commas and spacing!
->
-Note: to get the length of the String, call `.length()`
-For example:
-```java
- int len = last_name.length();
- ```
-
-Here are a couple examples of output from a successfully working method.
-
-```
-What is up Audrey Dorin, I am sure glad to meet you!
-
-Good day Matthew Ernst, I am sure glad to meet you!
-
-What is up Isabella Zapata, I hope you are having a good day so far!
-```
-
-**Testing nameIntroductions(String first_name, String last_name)**
-
-While we tested the names above in `nameIntroductionsTests()`, you will want to test other names. 
-
-Go ahead and run the game a few times. Once you have completed this step, you should go into submit mode and submit for grading.
+## Step 3: Playtest
+Now that you have completed the methods and tested them individuallly, it is time to playtest the game in its entirety.
 
 ## Step 4: Turning In/Receiving Credit
-
-Submit the lab in Zybooks by clicking through the canvas link, as this is a Thursday practice lab, the grade is only based on getting it done. However, you should still be writing tests and using the techniques demonstrated.  Make sure canvas updated (you may need to click the link again, and then click submit for grading again)!
+Submit the lab in Zybooks by clicking through the Canvas link, as this is a Thursday practice lab, the grade is only based on getting it done. However, you should still be writing tests and using the techniques demonstrated.  Make sure canvas updated (you may need to click the link again, and then click submit for grading again)!
 
 ## Review of Branching
-
 Branching logic statements allow programmers to create multiple scenarios for their code to follow depending on different input criteria. The most basic of branching logic statements is the `if` statement.
 
 The `if` statement is like asking a question, for example: “Do you like mac and cheese?” If yes, make mac and cheese. In addition to this you have the `else` statement, this statement is a form of default statement for a question. “Do you like mac and cheese?”: if yes, make mac and cheese, else make hamburgers. In programming, `if` statements are used to create branching pathways that the code can take.

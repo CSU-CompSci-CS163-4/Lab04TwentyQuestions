@@ -1,5 +1,4 @@
 # Lab 04 - Twenty Questions
-
 In this lab, you will create a simple program that is a 20 questions game.
 
 ## Step 1: Self-Explanation

@@ -4,7 +4,7 @@ In this lab, you will create a simple program that is a 20 questions game.
 ## Step 1: Self-Explanation
 Using the flow diagram below, explain *in your own words* what is happening in `main()`. Put some comments above the different methods being called so that before you start coding, you know the big picture of how the game is going to work.
 
-![TwentyQuestionsFlow](https://user-images.githubusercontent.com/77072076/147894123-bcc68778-4bfd-4951-b515-b8ee0d32c0c4.png)
+![TwentyQuestionsFlow](https://user-images.githubusercontent.com/77072076/147973705-7e8a89ca-4159-49fd-beb9-8374a1f8a38c.png)
 
 ## Step 2: Coding
 Take a look at the [javadoc](http://www.cs.colostate.edu/~cs163/javadoc/lab04/package-summary.html). Edit the methods marked with `TODO student`. Make sure to test your methods as you complete each one. If you wait until the end to test your code, it makes everything so much harder to debug. 

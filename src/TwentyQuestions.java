@@ -1,6 +1,6 @@
 public class TwentyQuestions {
 
-    public static String nameIntroduction(String playerName){
+    public String nameIntroduction(String playerName){
         playerName = playerName.toUpperCase();
         String message = "";
 
@@ -10,12 +10,12 @@ public class TwentyQuestions {
     }
 
 
-    public static int playGame(int guess, int num) {
+    public int playGame(int guess, int num) {
         //TODO student
         return 0;
     }
 
-    public static String numberInfo(int number){
+    public String numberInfo(int number){
         //TODO student
         return "";
     }
